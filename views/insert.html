@@ -1,0 +1,38 @@
+<html>
+    <head>
+    <title>WebSocket Client</title>
+    <script src="../socket.io/socket.io.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+		$(function(){
+			var output = $('#output');
+	 
+			var socket = io.connect();
+	 
+			socket.on("connect",function(){
+				console.log("Connected to the server");
+			});
+			socket.on('insert success',function(data) {
+			console.log(data);
+				output.append('<div>' + data[0].id + ' | ' + data[0].name + '</div>');
+			});
+			socket.on('error', function (data) {
+				console.log("error:",data);
+			   }
+			);
+
+			$('#send').click(function(){
+				var data = {name: $('#input').val()};
+				socket.emit('insert', JSON.stringify(data));
+			});
+		});
+ 
+    </script>
+    </head>
+    <body>
+        <input type='text' id='input' />
+        <div id='output'></div>
+        <br/>
+        <input type='button' id='send' value='send' />
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "express-ejs-example",
+  "version": "0.0.1",
+  "description": "A sample code project demonstrating cookies using express",
+  "dependencies": {
+  	"express": "*",
+  	"ejs": "*",
+	"socket.io": "*",
+	"mysql": "*"
+   },
+  "engine": "node 0.10.6"
+}

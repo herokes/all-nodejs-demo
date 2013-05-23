@@ -1,0 +1,21 @@
+html{background: url(../img/bg-pattern-1.jpg) no-repeat center fixed;}
+
+.login-wrap{background: #FFFFFF; border: 1px solid #DEDEDE; border-radius: 3px 3px 3px 3px; line-height: 10px; padding: 30px 0 0; width: 420px; margin: 50px auto 0;}
+
+	.login-wrap header img {display: block;float: left;margin: 0 15px 30px 40px;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;}
+	.login-wrap header  h3 {font-size: 18px;line-height: 24px;padding: 12px 0 0 0; font-weight: 700;}
+
+.login-form-container{border-top: 1px solid #EDEDED; padding: 30px 0 0 40px;}
+	.login-form-container input{margin: 0 0 5px 0; padding: 8px 10px; font-size: 20px; width: 342px; color: #777777;border: 1px solid #CCCCCC;display: block;font-family: "Lato","Helvetica Neue",Helvetica,arial,sans-serif;transition: all 0.1s ease-out 0s;}
+	.login-form-container input:focus{color: #000000;}
+	.login-form-container input:hover{border: 1px solid #999999;}
+	
+	.login-form-container button{font-size: 18px;padding: 10px 0;width: 342px;background-color: #2596E6;background-image: -moz-linear-gradient(center top , #2F9EEC, #1988D6);border-color: #2F9EEC #1988D6 #1988D6;border-radius: 2px 2px 2px 2px;border-style: solid;border-width: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);color: #FFFFFF;text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);transition: all 0.1s ease-out 0s; display: block;}
+	.login-form-container button:hover {background-image: -moz-linear-gradient(center top , #1988D6, #1988D6);color: #FFFFFF;}
+	
+	.login-wrap footer{border-top: 1px solid #EDEDED; margin-top: 15px; padding: 30px 0 30px 40px;}
+		.login-wrap footer h2{font-weight: bold;font-size: 16px;color: black;padding-bottom: 15px;margin-bottom: 15px;}
+		.login-wrap footer a {margin-right: 10px; line-height: 18px; padding: 10px 10px 10px 40px; font-size: 12px; text-decoration: none;background-color: #F4F4F4;background-image: -moz-linear-gradient(center top , #FFFFFF, #F4F4F4);border: 1px solid #CCCCCC;border-radius: 2px 2px 2px 2px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);color: #313131;transition: all 0.1s ease-out 0s;}
+		.login-wrap footer a:hover{background-color: #FFFFFF;border: 1px solid #999999; color: #000;}
+		.login-wrap footer .facebook-button{background: url(../img/facebook-18.png) no-repeat 10px;}
+		.login-wrap footer .twitter-button{background: url(../img/twitter-18.png) no-repeat 10px;}
